@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "basicImplementation.h"
+
 @interface subclasTestingTests : XCTestCase
+
+@property (nonatomic,strong) basicImplementation *basic;
 
 @end
 
@@ -17,7 +21,7 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.basic = [[basicImplementation alloc] init];;
 }
 
 - (void)tearDown {
@@ -25,16 +29,16 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+-(void)testThatWeCanGetFirst20
+{
+    NSNumber *result = [self.basic getFirst20];
+    XCTAssertEqual(result, @20);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void)testThatWeCanGetNext20
+{
+    NSNumber *result = [self.basic getFirst20];
+    XCTAssertEqual(result, @20);
 }
 
 @end
