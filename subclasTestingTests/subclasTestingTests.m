@@ -6,7 +6,6 @@
 //
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
 #import "basicImplementation.h"
@@ -31,12 +30,14 @@
 
 -(void)testThatWeCanGetFirst20
 {
+    NSLog(@"base Tests");
     NSNumber *result = [self.basic getFirst20];
     XCTAssertEqual(result, @20);
 }
 
 -(void)testThatWeCanGetNext20
 {
+    NSLog(@"base Tests");
     NSNumber *result = [self.basic getFirst20];
     XCTAssertEqual(result, @20);
 }

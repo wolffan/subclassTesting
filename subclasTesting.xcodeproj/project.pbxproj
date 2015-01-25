@@ -15,6 +15,7 @@
 		CD612E0D1A75B05300AD8FB1 /* basicImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD612E0C1A75B05300AD8FB1 /* basicImplementation.m */; };
 		CD612E111A75B33300AD8FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD612E0E1A75B33300AD8FB1 /* Main.storyboard */; };
 		CD612E121A75B33300AD8FB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD612E101A75B33300AD8FB1 /* ViewController.m */; };
+		CD612E141A75B4C800AD8FB1 /* secondSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = CD612E131A75B4C800AD8FB1 /* secondSubclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		CD612E0E1A75B33300AD8FB1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CD612E0F1A75B33300AD8FB1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD612E101A75B33300AD8FB1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD612E131A75B4C800AD8FB1 /* secondSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondSubclass.m; sourceTree = "<group>"; };
+		CD612E151A75B78F00AD8FB1 /* subclasTestingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subclasTestingTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +115,9 @@
 		CD612DFD1A75AC1D00AD8FB1 /* subclasTestingTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD612E151A75B78F00AD8FB1 /* subclasTestingTests.h */,
 				CD612E001A75AC1D00AD8FB1 /* subclasTestingTests.m */,
+				CD612E131A75B4C800AD8FB1 /* secondSubclass.m */,
 				CD612DFE1A75AC1D00AD8FB1 /* Supporting Files */,
 			);
 			path = subclasTestingTests;
@@ -237,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD612E011A75AC1D00AD8FB1 /* subclasTestingTests.m in Sources */,
+				CD612E141A75B4C800AD8FB1 /* secondSubclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
